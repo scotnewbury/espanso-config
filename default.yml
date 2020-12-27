@@ -1,0 +1,90 @@
+# espanso configuration file
+
+# This is the default configuration file, change it as you like it
+# You can refer to the official documentation:
+# https://espanso.org/docs/
+
+# Matches are the substitution rules, when you type the "trigger" string
+# it gets replaced by the "replace" string.
+
+matches:
+  # Dates
+  - trigger: ";date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  - trigger: ";dc"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y%m%d"
+
+  - trigger: ";ds"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  - trigger: ";dt"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y%m%d-%H%m"
+
+  # Sigs
+  - trigger: ";ts"
+    replace: "Thanks,\nScot\n"
+
+  - trigger: ";rs"
+    replace: "Regards,\nScot\n"
+
+  - trigger: ";fs"
+    replace: "Fraternally,\nScot\n"
+
+  - trigger: ";ddgm"
+    replace: "Fraternally,\nScot W. Newbury, DDGM, District #2\nGrand Lodge of New Hampshire F&AM\n"
+
+  - trigger: ";pm"
+    replace: "Fraternally,\nScot W. Newbury, DDGM, District #2\nGrand Lodge of New Hampshire\nPast Master\nSt. Mark's Lodge No. 44\n"
+
+  - trigger: ";gs"
+    replace: "May your dice roll well,\nScot Newbury\nscot@ofdiceanddragons.com\nhttps://ofdiceanddragons.com\n"
+
+  - trigger: ";acc"
+    replace: "Thanks,\nDad Scot Newbury\nAdvisory Council Chairman\nUnion Chapter, Order of DeMolay\n"
+
+  # Straight replacements
+  - trigger: "[dd"
+    replace: "[DDGM] "
+
+  - trigger: "[tu"
+    replace: "[tux] "
+
+###############################
+##        RPG Related        ##
+###############################
+
+  - trigger: ";ctb"
+    replace: "RPG Carnival Host - Touching Base\t\nI just wanted to reach out and touch base as I have you down to host the November RPG Carnival.\n\nWhen you get the kickoff post up on the 1st let me know so I can help get the word out.\n"
+
+###############################
+##       Code Snippets       ##
+###############################
+
+  - trigger: ";php"
+    replace: "<?php ?>"
+
+###############################
+## Work Related Replacements ##
+###############################
+
