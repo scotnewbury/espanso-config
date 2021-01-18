@@ -60,14 +60,14 @@ matches:
   - trigger: ";gs"
     replace: "May your dice roll well,\nScot Newbury\nscot@ofdiceanddragons.com\nhttps://ofdiceanddragons.com\n"
 
-  - trigger: ";acc"
-    replace: "Thanks,\nDad Scot Newbury\nAdvisory Council Chairman\nUnion Chapter, Order of DeMolay\n"
+  - trigger: ";td"
+    replace: "Thanks,\nDad Scot Newbury\n"
 
   # Straight replacements
-  - trigger: "[dd"
+  - trigger: ";dd"
     replace: "[DDGM] "
 
-  - trigger: "[tu"
+  - trigger: ";tu"
     replace: "[tux] "
 
 ###############################
