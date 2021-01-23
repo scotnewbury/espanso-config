@@ -64,7 +64,7 @@ matches:
     replace: "Thanks,\nDad Scot Newbury\n"
 
   # Straight replacements
-  - trigger: ";dd"
+  - trigger: ";[d"
     replace: "[DDGM] "
 
   - trigger: ";tu"
