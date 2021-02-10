@@ -73,6 +73,9 @@ matches:
   - trigger: ";tt"
     replace: "Travel Time"
 
+  - trigger: ";li"
+    replace: "https://www.linkedin.com/in/scotnewbury/"
+
 ###############################
 ##        RPG Related        ##
 ###############################
