@@ -8,9 +8,6 @@
 # it gets replaced by the "replace" string.
 
 matches:
-  - trigger: ";ex"
-    replace: "\n## Extreme"
-
   # Dates
   - trigger: ";date"
     replace: "{{mydate}}"
